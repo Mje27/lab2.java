@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="registrationForm">
+  <h2>Register</h2>
+  
+  <label>Username (Only letters)</label>
+  <input type="text" id="username" required />
+  <div class="error" id="usernameError"></div>
+
+  <label>Date of Birth</label>
+  <input type="date" id="dob" required />
+  <div class="error" id="dobError"></div>
+
+  <label>Phone Number</label>
+  <input type="text" id="phone" required />
+  <div class="error" id="phoneError"></div>
+
+  <label>Password</label>
+  <input type="password" id="password" required />
+  <div class="error" id="passwordError"></div>
+
+  <label>Confirm Password</label>
+  <input type="password" id="confirmPassword" required />
+  <div class="error" id="confirmPasswordError"></div>
+
+  <label>Account Type</label>
+  <select id="accountType" required>
+    <option value="">Select account type</option>
+    <option value="farmer">Farmer</option>
+    <option value="student">Student</option>
+    <option value="supplier">Supplier</option>
+  </select>
+
+  <button type="submit">Register</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
